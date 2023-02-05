@@ -37,7 +37,7 @@ const Home = () => {
 
                     </CardText>
                     <Button color="primary" >
-                      <a href="/trello" className="font-weight-bold text-decoration-none text-white">
+                      <a href="/safety" className="font-weight-bold text-decoration-none text-white">
                         Safety Tips
                       </a>
                     </Button>

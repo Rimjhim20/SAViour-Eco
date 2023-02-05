@@ -30,7 +30,7 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       <li><Link to="/" className='text-decoration-none text-black m-4'>Home</Link></li>
       <li><Link to="/prepare " className='text-decoration-none text-black m-4'>Prepare for Disaster</Link></li>
-      <li><Link to=' ' className='text-decoration-none text-black m-4'>Dummy</Link></li>
+      <li><Link to='/quiz' className='text-decoration-none text-black m-4'>Quiz</Link></li>
       <li><Link to=' ' className='text-decoration-none text-black m-4'>Dummy</Link></li>
      </Ul>
   )
