@@ -11,6 +11,9 @@ const safety = () => {
         <div class="content">
             <h2><b>Stay Safe And Prepared. </b></h2><br/>
             <p>It is important to stay safe and prepared during a disaster because disasters can pose a threat to both physical safety and property. Natural disasters such as hurricanes, earthquakes, and wildfires can cause widespread destruction, while man-made disasters such as chemical spills or explosions can also pose a significant threat. In order to minimize the impact of a disaster, it's crucial to be prepared and follow safety guidelines.</p>
+            <div>
+                  <button type="button" class="btn btn-dark"><Link to="/quiz" className='text-white text-decoration-none'>Disaster Trivia</Link></button>
+                  </div>
         </div>
     </section>
 
@@ -22,56 +25,56 @@ const safety = () => {
                 <i class="fas fa-ambulance"></i>
                 <h3>24/7 Emergency Contact</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/emergency" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Hurricane</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/tips" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Earthquake</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/earth" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Flood</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/flood" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
 
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>WildFire</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Tornado</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Thunderstorms & lighting</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Winter and ice storms</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Tsunamis</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">learn more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
         </div>
     </section>

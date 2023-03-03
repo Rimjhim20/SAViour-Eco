@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <div className=' '>
-      <footer className=" bg-light m-8">
+    <div className=''>
+      <footer className=" bg-light mt-2 m-8">
         <div className="container ">
     <section className="  text-center">
       <Link
