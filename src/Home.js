@@ -1,4 +1,6 @@
 import React, { Fragment } from 'react';
+import'./floating-wpp';
+import './floating-wpp.css';
 import {
   Container, Row, Col, Button, Card, CardImg, CardBody,
   CardTitle, CardText
@@ -9,7 +11,6 @@ import Boy from './assets/boy.jpg';
 const Home = () => {
   return (
     <>
-
       <Fragment>
         <main className=" ">
           <Container className="px-0">
@@ -47,7 +48,6 @@ const Home = () => {
           </Container>
         </main>
       </Fragment>
-
     </>
   )
 }

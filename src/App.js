@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom"
+import  { useEffect } from 'react';
+import $ from 'jquery';
 import './App.css';
 import Home from './Home';
 import Navbar from './components/Nav/Navbar'
@@ -13,10 +15,24 @@ import Earth from "./Earth";
 import Flood from "./Flood";
 import BANNER from './assets/banner.png';
 function App() {
+  useEffect(() => {
+    $('#myButton').floatingWhatsApp({
+      phone: '9142532175',
+      popupMessage: 'Hello, how can we help you?',
+      message: "I'd like to ask disaster related query",
+      showPopup: true,
+      showOnIE: false,
+      headerTitle: 'WhatsApp Chat',
+      headerColor: 'green',
+      backgroundColor: 'grey',
+      buttonImage: '<img src="/whatsapp.svg" />'
+    });
+  }, []);
   return (
     <div className="App">
       <Navbar/>
       <img src={BANNER} alt={BANNER} height={60} width={340} />
+      <div>
       <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/prepare" element={<Prepare/>} />
@@ -28,6 +44,8 @@ function App() {
           <Route path="/flood" element={<Flood/>}/>
           <Route path="/post" element={<Post/>}/>
         </Routes>
+        <div id="myButton"></div>
+    </div>
         <Footer/>
     </div>
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Burger from './Burger';
 
@@ -19,7 +20,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-        <b>SaFe-HaVeN</b>
+      <Link to="/" className='font-weight-bold text-decoration-none text-black'><b>SaFe-HaVeN</b></Link>
       </div>
       <Burger />
     </Nav>

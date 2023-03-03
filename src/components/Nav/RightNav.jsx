@@ -28,10 +28,12 @@ const Ul = styled.ul`
 const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
-      <li><Link to="/" className='text-decoration-none text-black m-4'>Home</Link></li>
+      
+      <li><Link to='/safety' className='text-decoration-none text-black m-4'>Safeguard</Link></li>
+      <li><Link to="/tweet" className='text-decoration-none text-black m-4'>TweetAlert</Link></li>
+      <li><Link to="/contribute" className='text-decoration-none text-black m-4'>Contribute</Link></li>
       <li><Link to="/prepare " className='text-decoration-none text-black m-4'>Disasterpedia</Link></li>
       <li><Link to='/post' className='text-decoration-none text-black m-4'>DisasterPost</Link></li>
-      <li><Link to='/safety' className='text-decoration-none text-black m-4'>Safeguard</Link></li>
      </Ul>
   )
 }
