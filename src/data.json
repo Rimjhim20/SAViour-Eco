@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Water bottles",
+    "quantity": 3,
+    "checked": false
+  },
+  {
+    "name": "Non-perishable food items",
+    "quantity": 5,
+    "checked": false
+  },
+  {
+    "name": "First aid kit",
+    "quantity": 1,
+    "checked": false,
+    "items": [
+      "Bandages",
+      "Antiseptic wipes",
+      "Gauze pads",
+      "Adhesive tape",
+      "Scissors",
+      "Tweezers",
+      "Thermometer",
+      "Pain relievers",
+      "Antihistamines",
+      "Prescription medications"
+    ]
+  },
+  {
+    "name": "Flashlight",
+    "quantity": 1,
+    "checked": false
+  },
+  {
+    "name": "Extra batteries",
+    "quantity": 2,
+    "checked": false
+  },
+  {
+    "name": "Blankets",
+    "quantity": 2,
+    "checked": false
+  },
+  {
+    "name": "Personal hygiene items",
+    "quantity": 1,
+    "checked": false,
+    "items": [
+      "Toothbrush",
+      "Toothpaste",
+      "Soap",
+      "Hand sanitizer",
+      "Feminine hygiene products",
+      "Contact lens solution",
+      "Glasses or contacts"
+    ]
+  },
+  {
+    "name": "Cash",
+    "quantity": 1,
+    "checked": false
+  },
+  {
+    "name": "Copies of important documents",
+    "quantity": 1,
+    "checked": false,
+    "items": [
+      "Identification",
+      "Insurance cards",
+      "Medical records",
+      "Emergency contacts",
+      "Passports",
+      "Birth certificates",
+      "Social security cards"
+    ]
+  },
+  {
+    "name": "Cell phone charger",
+    "quantity": 1,
+    "checked": false
+  }
+]

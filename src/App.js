@@ -10,10 +10,14 @@ import Quiz from './Quiz';
 import Safety from './safety';
 import HTips from "./HTips";
 import Emergency from "./Emergency";
+import {Login}  from "./components/login";
+import {CreatePost}  from "./components/createpost";
+import EmergencyCheck from './EmergencyCheck'
 import Post from "./Post";
 import Earth from "./Earth";
 import Flood from "./Flood";
 import BANNER from './assets/banner.png';
+import Tweet from "./Tweet";
 function App() {
   useEffect(() => {
     $('#myButton').floatingWhatsApp({
@@ -43,6 +47,10 @@ function App() {
           <Route path="/earth" element={<Earth/>}/>
           <Route path="/flood" element={<Flood/>}/>
           <Route path="/post" element={<Post/>}/>
+          <Route path="/tweet" element={<Tweet/>}/>
+          <Route path="/login" element={<Login/>} />
+          <Route path="/createpost" element={<CreatePost/>} />
+          <Route path="/kit" element={<EmergencyCheck/>}/>
         </Routes>
         <div id="myButton"></div>
     </div>
