@@ -2,7 +2,7 @@ import React from 'react'
 import "./App.css";
 import { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import { db } from "./firebase-config";
+import { db } from "./firebase";
 import { Post } from "./components/post";
 import {Navbar} from "./components/navbar";
 const Tweet = () => {

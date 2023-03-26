@@ -1,9 +1,9 @@
 import React from "react";
-import { auth, provider } from "../firebase-config";
+import { auth, provider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 import {Navbar} from "./navbar";
-export const Login = () => {
+export const TweetLogin = () => {
   const navigate = useNavigate();
   const signInWithGoogle = async () => {
     const result = await signInWithPopup(auth, provider);

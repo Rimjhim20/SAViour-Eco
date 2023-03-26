@@ -38,7 +38,7 @@ const Home = () => {
               </Col>
               <Col xs={{ order: 1 }} md={{ size: 6, offset: 1 }} tag="section" className="mt-4 ">
               <div className='m-2'>
-                <h1>SaFe-HaVeN</h1>
+                <h1>Climate-HaVeN</h1>
                 <p>"Nature's wrath can be devastating, but with a well-planned natural disaster management system in place, we can minimize the damage."</p>
 
                 <CardImg top width="100%" height="80%" src={PIC} alt="banner" />

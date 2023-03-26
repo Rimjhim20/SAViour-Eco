@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { addDoc, collection } from "firebase/firestore";
-import { auth, db } from "../firebase-config";
+import { auth, db } from "../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 
@@ -37,7 +37,7 @@ const CreateForm = () => {
 
   return (
     
-    <form onSubmit={handleSubmit(onCreatePost)}>
+    <form onSubmit={handleSubmit(onCreatePost)} className="tweetform">
    
       <input placeholder="Title..." {...register("title")} />
       <p style={{ color: "red" }}> {errors.title?.message}</p>
