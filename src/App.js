@@ -6,22 +6,21 @@ import $ from 'jquery';
 import './App.css';
 import Home from './Home';
 import Navbar from './components/Nav/Navbar'
-import Prepare from './prepare'
+import Prepare from './Disasterpedia/prepare'
 import Footer from "./Footer";
-import Quiz from './Quiz';
-import Safety from './safety';
-import HTips from "./HTips";
-import Emergency from "./Emergency";
+import Quiz from './Disasterpedia/Quiz';
+import Safety from './Disasterpedia/safety';
+import HTips from "./Disasterpedia/HTips";
+import Emergency from "./Disasterpedia/Emergency";
 import Login from './components/Authentication/Login';
 import Signup from './components/Authentication/Signup';
-// import {TweetLogin}  from "./components/TweetLogin";
 import {CreatePost}  from "./components/createpost";
-import EmergencyCheck from './EmergencyCheck'
-import Post from "./Post";
-import Earth from "./Earth";
-import Flood from "./Flood";
+import EmergencyCheck from './Disasterpedia/EmergencyCheck'
+import Post from "./Disasterpedia/Post";
+import Earth from "./Disasterpedia/Earth";
+import Flood from "./Disasterpedia/Flood";
 import BANNER from './assets/banner.png';
-import Tweet from "./Tweet";
+import Tweet from "./Disasterpedia/Tweet";
 function App() {
   useEffect(() => {
     $('#myButton').floatingWhatsApp({
@@ -101,11 +100,10 @@ function App() {
                   </ProtectedRoute>
                 }
               />
-          
+         
           <Route path="/flood" element={<Flood/>}/>
           <Route path="/post" element={<Post/>}/>
           <Route path="/tweet" element={<Tweet/>}/>
-          {/* <Route path="/login" element={<TweetLogin/>} /> */}
           <Route path="/createpost" element={<CreatePost/>} />
           <Route path="/kit" element={<EmergencyCheck/>}/>
         </Routes>
@@ -115,7 +113,9 @@ function App() {
   
         <Footer/>
     </div>
+    
   );
+  
 }
 
 export default App;

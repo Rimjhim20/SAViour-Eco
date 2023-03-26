@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import questions  from './components/Questions';
+import questions  from '../components/Questions';
 import {Link } from 'react-router-dom'
 export default function Quiz() {
 	const [currentQuestion, setCurrentQuestion] = useState(0);

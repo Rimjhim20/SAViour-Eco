@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Container, Navbar, Row, Col } from "react-bootstrap";
-import AddContact from "./components/AddContact";
-import ContactsList from "./components/ContactsList";
-import "./App.css";
+import AddContact from "../components/AddContact";
+import ContactsList from "../components/ContactsList";
+import "../App.css";
 function Emergency() {
   const [contactId, setContactId] = useState("");
   const getContactIdHandler = (id) => {

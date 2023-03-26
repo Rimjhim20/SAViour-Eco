@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
-import data from './data.json';
-import './App.css';
+import data from '../data.json';
+import '../App.css';
 import { Container, Row, Col, Card, ListGroup, Form } from "react-bootstrap";
 
 function EmergencyCheck() {

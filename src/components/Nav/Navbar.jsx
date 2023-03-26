@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <Nav>
       <div className="logo">
-      <Link to="/" className='font-weight-bold text-decoration-none text-black'><b>SaFe-HaVeN</b></Link>
+      <Link to="/" className='font-weight-bold text-decoration-none text-black'><b>CliMate-HaVeN</b></Link>
       </div>
       <Burger />
     </Nav>

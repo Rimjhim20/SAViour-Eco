@@ -1,5 +1,5 @@
 import React from 'react'
-import Control from './components/Control'
+import Control from '../components/Control'
 
 const Post = () => {
   return (

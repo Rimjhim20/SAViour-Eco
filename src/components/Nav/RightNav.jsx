@@ -74,7 +74,7 @@ const RightNav = ({ open }) => {
                   </Link>
                 </div>
               </div>
-              <Link to="/contribute" className="text-decoration-none text-black m-4">
+              <Link to="/donate" className="text-decoration-none text-black m-4">
                 Donate
               </Link>
               <div className="dropdown">

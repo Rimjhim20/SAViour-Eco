@@ -1,5 +1,5 @@
 import React from 'react'
-import homePic from './assets/home-img.svg'
+import homePic from '../assets/home-img.svg'
 import {Link} from 'react-router-dom'
 const safety = () => {
   return (
