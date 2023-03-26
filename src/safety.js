@@ -43,20 +43,20 @@ const safety = () => {
                 <i class="fas fa-notes-medical"></i>
                 <h3>Flood</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to="/flood" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/safety/flood" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
 
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>WildFire</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/safety/wildfire" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
                 <h3>Tornado</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/safety/tornado" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
@@ -68,7 +68,7 @@ const safety = () => {
                 <i class="fas fa-notes-medical"></i>
                 <h3>Winter and ice storms</h3>
                 <p>Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. Ad, Omnis.</p>
-                <Link to=" " class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
+                <Link to="/safety/winter" class="btn">see more <span class="fas fa-chevron-right"></span> </Link>
             </div>
             <div class="box">
                 <i class="fas fa-notes-medical"></i>
