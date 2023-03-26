@@ -1,15 +1,11 @@
 {
   "name": "Climate Haven",
   "short_name": "Climate Haven",
-  "theme_color": "#000000",
-  "background_color": "#000000",
-  "display": "standalone",
-  "scope": "/",
-  "start_url": "/",
+  
   "icons": [
     {
       "src":"maskable.png",
-      "sizes":"196x196",
+      "sizes":"602x602",
       "type":"image/png",
       "purpose":"maskable"
     },
@@ -33,6 +29,10 @@
       "sizes":"512x512",
       "type":"image/png"
     }
-  ]
- 
+  ],
+  "scope": "/",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000"
 }
