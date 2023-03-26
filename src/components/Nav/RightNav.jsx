@@ -24,15 +24,9 @@ const Ul = styled.ul`
     width: 220px;
     padding: 50px 5px;
     transition: transform 0.3s ease-in-out;
-
-    li {
-      margin-bottom: 1rem;
-    }
   }
 
-  li{
-    margin-bottom: 1rem;
-  }
+ 
 `;
 
 
@@ -56,7 +50,7 @@ const RightNav = ({ open }) => {
   };
 
   return (
-    <Ul open={open}>
+    <Ul open={open} className="mt-2">
       <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
         <div className="d-flex align-items-center flex-column flex-md-row">
           {user && (
@@ -102,6 +96,9 @@ const RightNav = ({ open }) => {
                   <Link to="/map" className="dropdown-item" onClick={() => toggleMenu(3)}>
                     MapView
                   </Link>
+                  <Link to="/api" className="dropdown-item" onClick={() => toggleMenu(3)}>
+                    DisasterInfo
+                  </Link>
                   <Link to="/detect" className="dropdown-item" onClick={() => toggleMenu(3)}>
                     Detect
                   </Link>
@@ -117,12 +114,17 @@ const RightNav = ({ open }) => {
         <div className="user">
           {user && (
             <>
-              <div className="pt-2">
+              <div className="mt-2 flex justify-between">
                 {/* <p>{user?.displayName}</p> */}
-                <img src={user?.photoURL || ''} alt="User" width="40" height="40" />
-                <button className="btn btn-primary m-2" onClick={signUserOut}>
-                  Log Out
-                </button>
+                
+                <img className=''  src={user?.photoURL || ''} alt="User" style = {{height:'40px' , width:'42px'}}  />
+                
+                <div>
+                  <button className="btn btn-primary ml-2" onClick={signUserOut}>
+                    Log Out
+                  </button>
+
+                </div>
               </div>
             </>
           )}

@@ -5,6 +5,11 @@ import  { useEffect } from 'react';
 import $ from 'jquery';
 import './App.css';
 import Home from './Home';
+import Map from './services/Maps'
+import Card from './components/FoodDonation/Card'
+import Donation from './components/FoodDonation/Donation'
+import History from './components/FoodDonation/History'
+import Receive from './components/FoodDonation/Receive'
 import Navbar from './components/Nav/Navbar'
 import Prepare from './Disasterpedia/prepare'
 import Footer from "./Footer";
@@ -21,6 +26,7 @@ import Earth from "./Disasterpedia/Earth";
 import Flood from "./Disasterpedia/Flood";
 import BANNER from './assets/banner.png';
 import Tweet from "./Disasterpedia/Tweet";
+import Api from "./Api";
 function App() {
   useEffect(() => {
     $('#myButton').floatingWhatsApp({
@@ -38,7 +44,9 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      <div className='flex justify-center'>
       <img src={BANNER} alt={BANNER} height={60} width={340} />
+      </div>
       <div>
       <UserAuthContextProvider>
       <Routes>
@@ -100,7 +108,12 @@ function App() {
                   </ProtectedRoute>
                 }
               />
-         
+          <Route path="/map" element={<Map/>}/>
+          <Route path="/api" element={<Api/>}/>
+          <Route path="/donate" element={<Card/>}/>
+          <Route path="/donation" element={<Donation/>}/>
+          <Route path="/receive" element={<Receive/>}/>
+          <Route path="/history" element={<History/>}/>
           <Route path="/flood" element={<Flood/>}/>
           <Route path="/post" element={<Post/>}/>
           <Route path="/tweet" element={<Tweet/>}/>

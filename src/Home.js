@@ -41,7 +41,9 @@ const Home = () => {
                 <h1>Climate-HaVeN</h1>
                 <p>"Nature's wrath can be devastating, but with a well-planned natural disaster management system in place, we can minimize the damage."</p>
 
-                <CardImg top width="100%" height="80%" src={PIC} alt="banner" />
+<CardImg className='' top width="100%" height="80%" src={PIC} alt="banner" />
+
+               
 </div>
               </Col>
             </Row>
