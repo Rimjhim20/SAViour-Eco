@@ -14,7 +14,7 @@ import HTips from "./HTips";
 import Emergency from "./Emergency";
 import Login from './components/Authentication/Login';
 import Signup from './components/Authentication/Signup';
-import {TweetLogin}  from "./components/TweetLogin";
+// import {TweetLogin}  from "./components/TweetLogin";
 import {CreatePost}  from "./components/createpost";
 import EmergencyCheck from './EmergencyCheck'
 import Post from "./Post";
@@ -105,7 +105,7 @@ function App() {
           <Route path="/flood" element={<Flood/>}/>
           <Route path="/post" element={<Post/>}/>
           <Route path="/tweet" element={<Tweet/>}/>
-          <Route path="/login" element={<TweetLogin/>} />
+          {/* <Route path="/login" element={<TweetLogin/>} /> */}
           <Route path="/createpost" element={<CreatePost/>} />
           <Route path="/kit" element={<EmergencyCheck/>}/>
         </Routes>
