@@ -27,6 +27,7 @@ import Flood from "./Disasterpedia/Flood";
 import BANNER from './assets/banner.png';
 import Tweet from "./Disasterpedia/Tweet";
 import Api from "./Api";
+import ImageClassification from "./services/ImageClassification"
 function App() {
   useEffect(() => {
     $('#myButton').floatingWhatsApp({
@@ -117,7 +118,9 @@ function App() {
           <Route path="/flood" element={<Flood/>}/>
           <Route path="/post" element={<Post/>}/>
           <Route path="/tweet" element={<Tweet/>}/>
+          <Route path="/tweet" element={<Tweet/>}/>
           <Route path="/createpost" element={<CreatePost/>} />
+          <Route path="/detect" element={<ImageClassification/>} />
           <Route path="/kit" element={<EmergencyCheck/>}/>
         </Routes>
         <div id="myButton"></div>

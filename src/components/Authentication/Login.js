@@ -63,7 +63,7 @@ const Login = () => {
           <div>
             <br/>
           <GoogleButton
-            className="g-btn"
+            className="g-btn w-100"
             type=""
             onClick={handleGoogleSignIn}
           />
