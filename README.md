@@ -37,4 +37,9 @@ After creating your React app, change directory to your project's root folder an
 ```
 npm install firebase
 ```
+# Add Your React App to a Firebase Project
+The next step is to create a Firebase project and link it with your React app. Go to the Firebase console:
+
+1. Click Add project to start a new Firebase project.
+![image](https://user-images.githubusercontent.com/71636845/228268730-084c7076-e4c6-4246-b977-eaa75a8b88c9.png)
 
