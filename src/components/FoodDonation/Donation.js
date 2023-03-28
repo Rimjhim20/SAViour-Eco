@@ -21,7 +21,7 @@ function Donation() {
     event.preventDefault();
     const { firstName, lastName, phone, email, Type, Item, address, message }= userData;
     if( firstName&& lastName&& phone&& email&& Type&& Item && address&& message){
-    const res = await fetch('https://solution23-6e118-default-rtdb.firebaseio.com/donationData.json',
+    const res = await fetch('https://solution-f5982-default-rtdb.asia-southeast1.firebasedatabase.app/donationData.json',
    {
     method : "POST",
     headers : {
@@ -172,7 +172,7 @@ function Donation() {
             type="text"
             
             name = "address"
-            className="w-96 rounded-xl p-2 text-gray-900 border border-gray-300  bg-gray-100 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+            className="w-[100%] rounded-xl p-2 text-gray-900 border border-gray-300  bg-gray-100 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
             value={userData.address} onChange={postUserData} placeholder="Your Address"
           />
         </div>
