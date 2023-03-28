@@ -45,9 +45,9 @@ export const Post = ({ post }) => {
   }, []);
 
   return (
-    <div class="m-auto w-fit">
-  <div class="col-sm-4 mx-auto w-fit">
-    <div className="card m-2 w-fit p-2" >
+    <div class="m-auto ">
+  <div class="col-sm-4 mx-auto ">
+    <div className="card m-2 p-1" >
       <div className="card-title">
         <h3>{post.title}</h3>
       </div>
