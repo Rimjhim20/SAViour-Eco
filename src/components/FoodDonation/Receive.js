@@ -53,7 +53,7 @@ function Receive() {
 }
   return (
     <div className="flex justify-center">
-      <form method="POST">
+      <form method="POST" className="p-6 border-2 border-black rounded-xl bg-blue-300 mt-7">
         <div className="grid gap-6 mb-6 md:grid-cols-2 ">
           <div>
             <label

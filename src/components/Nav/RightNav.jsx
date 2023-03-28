@@ -9,7 +9,7 @@ import styled from 'styled-components';
 const Ul = styled.ul`
   list-style: none;
   display: flex;
-  z-index: 1;
+  z-index: 10;
   flex-flow: row nowrap;
   padding: 15px 5px;
 
@@ -50,9 +50,9 @@ const RightNav = ({ open }) => {
   };
 
   return (
-    <Ul open={open} className="mt-2">
-      <div className="d-flex justify-content-between align-items-center flex-column flex-md-row">
-        <div className="d-flex align-items-center flex-column flex-md-row">
+    <Ul open={open} className="mt-2 ">
+      <div className="d-flex justify-content-between align-items-center flex-column flex-md-row ">
+        <div className="d-flex align-items-center flex-column flex-md-row ">
           {user && (
             <>
               <div className="dropdown">
@@ -117,7 +117,7 @@ const RightNav = ({ open }) => {
               <div className="mt-2 flex justify-between">
                 {/* <p>{user?.displayName}</p> */}
                 
-                <img className=''  src={user?.photoURL || '../../assets/user.png'} alt="User" style = {{height:'40px' , width:'42px'}}  />
+                <img className=''  src={user?.photoURL || ''} alt="S" style = {{height:'40px' , width:'42px'}}  />
                 
                 <div>
                   <button className="btn btn-primary ml-2" onClick={signUserOut}>
