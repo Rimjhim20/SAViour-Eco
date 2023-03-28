@@ -15,10 +15,10 @@ const prepare = () => {
          <section class="section-big main-color">
             <div class="container mt-4">
                <div class="row">
-                  <div class="col-md-12 pb-20 text-center">
+                  <div class="col-md-12  text-center">
                      <h2 class="section-title mb-10"><span> All types of<strong class="primary-color">  Disaster</strong></span></h2>
                      <p class="section-sub-title">
-                        A disaster is an event, such as a natural or man-made catastrophe, that causes widespread damage, suffering, or loss of life. Some common types of disasters include hurricanes, earthquakes, fires, and floods. Disasters can have a significant impact on communities and can result in a wide range of effects, including physical damage to infrastructure, loss of homes and businesses, displacement of people, and psychological trauma. Effective disaster planning and response can help to minimize the impact of a disaster and improve recovery efforts. This can include measures such as evacuation plans, emergency preparedness kits, and disaster relief programs.
+                        A disaster is an event, such as a natural or man-made catastrophe, that causes widespread damage, suffering, or loss of life. Some common types of disasters include hurricanes, earthquakes, fires, and floods. Disasters can have a significant impact on communities and can result in a wide range of effects, including physical damage to infrastructure, loss of homes and businesses, displacement of people, and psychological trauma. 
                      </p>
                   </div>
                   <div>
@@ -29,7 +29,7 @@ const prepare = () => {
                <div class="row">
                   <div class="col-md-6 mb-2">
                      <div >
-                        <img src={hpic}  alt='' height="300" className=' w-75'/>
+                        <img src={hpic}  alt='' height="300" className=' w-100'/>
                      </div>
 
                      <div class="icon-content">
@@ -40,7 +40,7 @@ const prepare = () => {
                      </div>
 
 
-                     <img src={flood} height="300" className=' w-75' alt='' />
+                     <img src={flood} height="300" className=' w-100' alt='' />
 
                      <div class="icon-content">
                         <h3 class="title">Flood</h3>
@@ -49,7 +49,7 @@ const prepare = () => {
                         </p>
                      </div>
 
-                     <img src={tornado}  height="300" className=' w-75' alt=''/>
+                     <img src={tornado}  height="300" className=' w-100' alt=''/>
 
                      <div class="icon-content">
                         <h3 class="title">Tornado</h3>
@@ -58,7 +58,7 @@ const prepare = () => {
                         </p>
                      </div>
 
-                     <img src={ice} height="300" className=' w-75' alt=''/>
+                     <img src={ice} height="300" className=' w-100' alt=''/>
 
                      <div class="icon-content">
                         <h3 class="title"> Winter and ice storms</h3>
@@ -69,28 +69,28 @@ const prepare = () => {
 
                   </div>
                   <div class="col-md-6 mb-2 mb-2">
-                     <img src={earth} height="300" className=' w-75' alt=''/>
+                     <img src={earth} height="300" className=' w-100' alt=''/>
                      <div class="icon-content">
                         <h3 class="title">Earthquake</h3>
                         <p class="sub-title">
                            An earthquake is the shaking of the surface of the earth caused by the release of energy stored in the earth's crust. Earthquakes can be caused by the movement of tectonic plates, volcanic activity, and other factors. Earthquakes can range in magnitude from small, barely noticeable tremors to large, catastrophic events. Earthquakes can cause damage to buildings, infrastructure, and other structures, and can result in loss of life.
                         </p>
                      </div>
-                     <img src={fire} height="300" className=' w-75' alt=''/>
+                     <img src={fire} height="300" className=' w-100' alt=''/>
                      <div class="icon-content">
                         <h3 class="title">Wildfire</h3>
                         <p>
                            A wildfire is an uncontrolled fire that burns in a natural area, such as a forest, grassland, or prairie. Wildfires can be started by natural causes, such as lightning, or by human activities, such as campfires and cigarettes. Wildfires can spread quickly and unpredictably, making them difficult to control. They can result in the destruction of homes and other structures, and can threaten wildlife and other forms of vegetation.
                         </p>
                      </div>
-                     <img src={thunder} height="300" className=' w-75' alt=''/>
+                     <img src={thunder} height="300" className=' w-100' alt=''/>
                      <div class="icon-content">
                         <h3 class="title">Thunderstorms & lighting</h3>
                         <p>
                         Thunderstorms with lightning can pose significant hazards to people and property. Lightning strikes can cause fires, electrical outages, and damage to buildings and other structures. Additionally, strong winds associated with thunderstorms can cause structural damage and power outages, and heavy rain can lead to flash flooding,But we can reduce the risks associated with thunderstorms and lightning.
                         </p>
                      </div>
-                     <img src={tsunami} height="300" className=' w-75' alt=''/>
+                     <img src={tsunami} height="300" className=' w-100' alt=''/>
                      <div class="icon-content">
                         <h3 class="title">Tsunamis</h3>
                         <p>

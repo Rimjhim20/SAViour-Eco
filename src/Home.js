@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import'./floating-wpp';
 import './floating-wpp.css';
+import Pic from './assets/images/illustration/handhold.jpeg'
 import {
   Container, Row, Col, Button, Card, CardImg, CardBody,
   CardTitle, CardText
@@ -15,7 +16,7 @@ const Home = () => {
         <main className=" ">
           <Container className="px-0">
             <Row noGutters className="position-relative">
-              <Col xs={{ order: 1 }} md={{ size: 5, order: 1 }} tag="aside" className=" ">
+              <Col xs={{ order: 2 }} md={{ size: 5, order: 1 }} tag="aside" className=" ">
                 <Card className='m-2'>
                   <CardImg top width="100%" src={Boy} alt="boy" />
                   <CardBody >
@@ -38,7 +39,10 @@ const Home = () => {
               </Col>
               <Col xs={{ order: 1 }} md={{ size: 6, offset: 1 }} tag="section" className="mt-4 ">
               <div className='m-2'>
-                <h1>Climate-HaVeN</h1>
+              <div className="d-flex justify-center">
+              <h1><b style={{color:"green"}}>SAV</b>iour-<b style={{color:"green"}}>E</b>co</h1>
+              <img src={Pic} alt='' className='ml-2' height={30} width={50}/>
+              </div>
                 <p>"Nature's wrath can be devastating, but with a well-planned natural disaster management system in place, we can minimize the damage."</p>
 
 <CardImg className='' top width="100%" height="80%" src={PIC} alt="banner" />

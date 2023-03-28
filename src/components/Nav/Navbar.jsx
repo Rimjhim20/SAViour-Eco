@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Burger from './Burger';
+import Pic from '../../assets/images/illustration/handhold.jpeg'
 
 const Nav = styled.nav`
   width: 100%;
@@ -19,8 +20,10 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">
-      <Link to="/" className='font-weight-bold text-decoration-none text-black'><b>CliMate-HaVeN</b></Link>
+      <div className="logo d-flex">
+      <Link to="/home" className='font-weight-bold text-decoration-none   text-black'>
+      <p><b style={{color:"green"}}>SAV</b>iour-<b style={{color:"green"}}>E</b>co</p></Link>
+     <img src={Pic} alt='' className='ml-2'/>
       </div>
       <Burger />
     </Nav>

@@ -19,11 +19,11 @@ export const Navbar = () => {
   return (
     <div className="tweetnavbar">
       <div className="links">
-            <Link to="/tweet" className=" " onClick={toggleMenu}>
-              TweetHome
+            <Link to="/tweet" className=" p-2" onClick={toggleMenu} >
+              AlertFeed
             </Link>
-            <Link to="/createpost" className=" " onClick={toggleMenu}>
-              Create Post
+            <Link to="/createpost" className="p-2" onClick={toggleMenu}>
+              Create-Post
             </Link>
           </div>
         </div>
