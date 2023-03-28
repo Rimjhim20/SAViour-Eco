@@ -1,70 +1,98 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# SAViour-Eco
 
-## Available Scripts
+Progressive Web App to solve poverty,hunger and impact of climate change.
 
-In the project directory, you can run:
+# Introduction
 
-### `npm start`
+This project uses google technologies like Firebase, Tensorflow , Google cloud , Google Map and Progressive web app
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Cloning the Repository
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To clone this repository, follow these steps:
 
-### `npm test`
+Open your terminal/command prompt and navigate to the directory where you want to clone the repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Run the following command:
 
-### `npm run build`
+### 1 - git clone https://github.com/Rimjhim20/SAViour-Eco.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Once the repository has been cloned, navigate into the directory by running:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2 - cd SAViour-Eco
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Install the necessary dependencies by running the following command:
 
-### `npm run eject`
+### 3 - npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Start the development server by running:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4 - npm run dev
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Now Website is running at http://localhost:3000/
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Install the Firebase Package
+After creating your React app, change directory to your project's root folder and install the Firebase package by running:
 
-## Learn More
+```
+npm install firebase
+```
+# Add Your React App to a Firebase Project
+The next step is to create a Firebase project and link it with your React app. Go to the Firebase console:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Click Add project to start a new Firebase project.
+![image](https://user-images.githubusercontent.com/71636845/228268730-084c7076-e4c6-4246-b977-eaa75a8b88c9.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2.Enter a project name, then click Continue.
+![image](https://user-images.githubusercontent.com/71636845/228269002-5db305d3-eede-4f1b-b576-11ee0cab5c0e.png)
 
-### Code Splitting
+3.Click Continue on the next page.
+4.Select your Firebase account from the dropdown or click Create a new account if you don't already have one.
+5.Finally, click Create project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://user-images.githubusercontent.com/71636845/228269312-ad83a6e1-68ab-4aec-afeb-92749ad4d3f6.png)
 
-### Analyzing the Bundle Size
+6.Click Continue once the process completes.
+7.Next, click the Web icon (</>) towards the top-left of the following page to set up Firebase for the web.
+![image](https://user-images.githubusercontent.com/71636845/228269482-b7b024af-98f0-43ba-ba45-513b46639be7.png)
+8.Enter a nickname for your app in the provided field. Then click Register app.
+![image](https://user-images.githubusercontent.com/71636845/228269577-6a80987e-ddf3-4dee-a0f9-e48e9aeb43eb.png)
+9. Copy the generated code and keep it for the following step (discussed in the following section).
+10. Click Continue to the console.
+11. There are many options on the following page. Scroll down and select Cloud Firestore since you only need to set up a database in this case.
+![image](https://user-images.githubusercontent.com/71636845/228269958-c83a5f5d-034a-400d-ad80-891a0190b087.png)
+12.Next, click Create database.
+![image](https://user-images.githubusercontent.com/71636845/228270080-365bfa6e-8350-4c4b-8625-5ad53866a8e2.png)
+13. Click Next. Select your preferred Firestore location from the dropdown.
+14. Then click Enable to create a Firestore database.
+![image](https://user-images.githubusercontent.com/71636845/228270264-1044d7c9-b265-460a-89d9-b51f63f680fb.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#Initialize Firebase in Your React App
+Create a new folder inside your project src directory. You can call this firebase_setup. Next, create a firebase.js file inside that folder. Then paste the code generated earlier into this file.
+For example, to enter your app's Firebase secret key in the .env file:
+```
+REACT_APP_apiKey = yourFirebaseAccessKey
 
-### Making a Progressive Web App
+```
+Thus, you can fine-tune the generated code as follows:
+```
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "@firebase/firestore"
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_apiKey,
+  authDomain: process.env.REACT_APP_authDomain,
+  projectId: process.env.REACT_APP_projectId,
+  storageBucket: process.env.REACT_APP_storageBucket,
+  messagingSenderId: process.env.REACT_APP_messagingSenderId,
+  appId: process.env.REACT_APP_appId,
+  measurementId: process.env.REACT_APP_measurementId
+};
 
-### Advanced Configuration
+const app = initializeApp(firebaseConfig);
+export const firestore = getFirestore(app)
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Woah 🥳 Firebase is connected successfully.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
