@@ -12,6 +12,13 @@ const firebaseConfig = {
   appId: "1:123087560437:web:7af189c5e721dd67516fbc",
   measurementId: "G-W0RNFHZVKD"
 };
+// apiKey: "AIzaSyDvZbQ_PqlSFsnpLvpxYzO79FgJvbPOyT8",
+// authDomain: "solution23-6e118.firebaseapp.com",
+// projectId: "solution23-6e118",
+// storageBucket: "solution23-6e118.appspot.com",
+// messagingSenderId: "532718820364",
+// appId: "1:532718820364:web:c6c9efd3ae67dff5ae2229",
+// measurementId: "G-N7D951Q69B"
 
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
