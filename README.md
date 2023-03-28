@@ -31,5 +31,10 @@ Open your terminal/command prompt and navigate to the directory where you want t
 
 ## Now Website is running at http://localhost:3000/
 
+# Install the Firebase Package
+After creating your React app, change directory to your project's root folder and install the Firebase package by running:
 
+```
+npm install firebase
+```
 
