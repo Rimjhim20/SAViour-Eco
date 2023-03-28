@@ -32,7 +32,7 @@ function EmergencyCheck() {
           <Row>
             <Col md={6}>
               <Card>
-                <Card.Header>Items To Pack</Card.Header>
+                <Card.Header className=" mt-4 bg-black text-white">Items To Pack</Card.Header>
                 <ListGroup variant="flush">
                   {data.map((item, index) => (
                     <ListGroup.Item key={index}>
@@ -63,7 +63,7 @@ function EmergencyCheck() {
             </Col>
             <Col md={6}>
               <Card>
-                <Card.Header>Items Packed</Card.Header>
+                <Card.Header className=" mt-4 bg-black text-white">Items Packed</Card.Header>
                 <ListGroup variant="flush">
                   {packedItems.map((item, index) => (
                     <ListGroup.Item key={index}>

@@ -55,6 +55,7 @@ function Receive() {
     <div className="flex justify-center">
       <form method="POST" className=" bg-blue-500 border-black p-4 rounded-xl mt-2 md:w-96  ">
         <div className="grid gap-6 mb-6 md:grid-cols-2 text-white">
+
           <div>
             <label
               htmlfor="first_name"
