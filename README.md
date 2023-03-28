@@ -93,6 +93,6 @@ const app = initializeApp(firebaseConfig);
 export const firestore = getFirestore(app)
 ```
 
-Firebase is connected successfully.
+### Woah 🥳 Firebase is connected successfully.
 
 
