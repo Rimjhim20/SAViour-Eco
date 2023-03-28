@@ -53,9 +53,9 @@ function Receive() {
 }
   return (
     <div className="flex justify-center">
-      <form method="POST" className=" bg-blue-500 border-black p-4 rounded-xl mt-2 md:w-96  ">
-        <div className="grid gap-6 mb-6 md:grid-cols-2 text-white">
-
+      <form method="POST"  className=" w-96 p-4 border-2 border-black rounded-xl bg-blue-500 mt-7 md:w-96">
+      <div className="grid gap-6 mb-6 md:grid-cols-2 ">
+<img src="https://cdn-icons-png.flaticon.com/512/1180/1180245.png" alt="" height={150} width={200} className="m-auto"/>
           <div>
             <label
               htmlfor="first_name"
@@ -75,15 +75,14 @@ function Receive() {
           <div>
             <label
               htmlfor="last_name"
-              className="block mb-2 text-sm font-medium dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Last name
             </label>
             <input
               type="text"
-              
               name="lastName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Doe"
               value={userData.lastName} onChange={postUserData}
               required
@@ -94,7 +93,7 @@ function Receive() {
           <div>
             <label
               htmlfor="phone"
-              className="block mb-2 text-sm font-medium dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Phone number
             </label>
@@ -126,6 +125,7 @@ function Receive() {
             required
           />
         </div>
+<div className="mb-6">
         <label
           htmlFor="countries"
           className="block mb-2 text-sm font-medium text-white dark:text-white"
@@ -141,6 +141,8 @@ function Receive() {
       
           <option value="Receive">Receive</option>
         </select>
+        </div>
+        <div className="mb-6">
         <label
           htmlFor="Type"
           className=" mb-2 text-sm font-medium text-white dark:text-white"
@@ -156,7 +158,8 @@ function Receive() {
           <option value="clothes">Clothes</option>
           <option value="food">Food</option>
         </select>
-        <div>
+        </div>
+        <div className="mb-6">
           <label
             htmlfor="small-input"
             className=" block mb-0 mt-2 text-sm font-medium text-white dark:text-white"
@@ -171,6 +174,7 @@ function Receive() {
             value={userData.address} onChange={postUserData} placeholder="Your Address"
           />
         </div>
+        <div className="mb-6">
         <label
           htmlfor="message"
           className="block mb-2 text-sm font-medium text-white dark:text-white"
@@ -186,6 +190,7 @@ function Receive() {
           value={userData.message} onChange={postUserData}
         ></textarea>
 
+</div>
         <button
           type="submit"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={submitData}

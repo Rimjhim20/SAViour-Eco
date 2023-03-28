@@ -30,15 +30,15 @@ input[type="file"] {
   padding: 5px;
   width: 80%;
 }
-input[type="number"],
+/* input[type="number"],
 input[type="text"] {
   border-radius: 3px;
   margin: 10px;
-  width: 80%;
+  width: 95%;
   text-align-last: center;
   outline: none;
   padding: 5px;
-}
+} */
 input[type="button"] {
   background-color: #0275d8;
   color: white;
