@@ -53,8 +53,10 @@ function Donation() {
 }
   return (
     <div className="flex justify-center ">
-      <form method="POST" className="p-4 border-2 border-black rounded-xl bg-blue-500 mt-7 md:w-96" >
+     
+      <form method="POST" className="w-96 p-4 border-2 border-black rounded-xl bg-blue-500 mt-7 md:w-96" >
         <div className="grid gap-6 mb-6 md:grid-cols-2 ">
+        <img src="https://www.svgrepo.com/show/194149/donate-donation.svg" alt="" height={150} width={150} className="m-auto"></img>
           <div>
             <label
               htmlfor="first_name"
@@ -125,6 +127,7 @@ function Donation() {
             required
           />
         </div>
+        <div className="mb-6">
         <label
           htmlFor="countries"
           className="block mb-2 text-sm font-medium text-white dark:text-white"
@@ -139,6 +142,8 @@ function Donation() {
           <option value>Select</option>
           <option value="Donate">Donate</option>
         </select>
+        </div>
+        <div className="mb-6">
         <label
           htmlFor="Type"
           className="mb-2 text-sm font-medium text-white dark:text-white"
@@ -154,7 +159,9 @@ function Donation() {
           <option value="clothes">Clothes</option>
           <option value="food">Food</option>
         </select>
-        <div>
+        </div>
+        
+        <div className="mb-6">
           <label
             htmlfor="small-input"
             className=" mt-2 text-sm font-medium text-white dark:text-white"
@@ -169,6 +176,7 @@ function Donation() {
             value={userData.address} onChange={postUserData} placeholder="Your Address"
           />
         </div>
+        <div className="mb-6">
         <label
           htmlfor="message"
           className="block mb-2 text-sm font-medium text-white dark:text-white"
@@ -183,7 +191,7 @@ function Donation() {
           placeholder="Write your thoughts here..."
           value={userData.message} onChange={postUserData}
         ></textarea>
-
+</div>
         <button
           type="submit"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" onClick={submitData}
