@@ -53,12 +53,12 @@ function Receive() {
 }
   return (
     <div className="flex justify-center">
-      <form method="POST">
-        <div className="grid gap-6 mb-6 md:grid-cols-2 ">
+      <form method="POST" className=" bg-blue-500 border-black p-4 rounded-xl mt-2 md:w-96  ">
+        <div className="grid gap-6 mb-6 md:grid-cols-2 text-white">
           <div>
             <label
               htmlfor="first_name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               First name
             </label>
@@ -66,7 +66,7 @@ function Receive() {
               type="text"
            
               name="firstName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="John"
               required value={userData.firstName} onChange={postUserData}
             />
@@ -74,7 +74,7 @@ function Receive() {
           <div>
             <label
               htmlfor="last_name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium dark:text-white"
             >
               Last name
             </label>
@@ -93,7 +93,7 @@ function Receive() {
           <div>
             <label
               htmlfor="phone"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium dark:text-white"
             >
               Phone number
             </label>
@@ -101,7 +101,7 @@ function Receive() {
               type="tel"
               
               name = "phone"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="123-45-678"
               value={userData.phone} onChange={postUserData}
               pattern="[0-9]{10}"
@@ -112,7 +112,7 @@ function Receive() {
         <div className="mb-6">
           <label
             htmlfor="email"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-white dark:text-white"
           >
             Email address
           </label>
@@ -127,14 +127,14 @@ function Receive() {
         </div>
         <label
           htmlFor="countries"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="block mb-2 text-sm font-medium text-white dark:text-white"
         >
          Type
         </label>
         <select  
           name = "Type"
           
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={userData.Type} onChange={postUserData}
+          className="bg-gray-50 border  border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={userData.Type} onChange={postUserData}
         >
           <option value>Select</option>
       
@@ -142,14 +142,14 @@ function Receive() {
         </select>
         <label
           htmlFor="Type"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className=" mb-2 text-sm font-medium text-white dark:text-white"
         >
         Item  
         </label>
         <select
           name="Item"
           value={userData.Item} onChange={postUserData}
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         >
           <option value>Select</option>
           <option value="clothes">Clothes</option>
@@ -158,7 +158,7 @@ function Receive() {
         <div>
           <label
             htmlfor="small-input"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className=" block mb-0 mt-2 text-sm font-medium text-white dark:text-white"
           >
             Address
           </label>
@@ -166,13 +166,13 @@ function Receive() {
             type="text"
             
             name = "address"
-            className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={userData.address} onChange={postUserData} placeholder="Your Address"
           />
         </div>
         <label
           htmlfor="message"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="block mb-2 text-sm font-medium text-white dark:text-white"
         >
           Your message
         </label>

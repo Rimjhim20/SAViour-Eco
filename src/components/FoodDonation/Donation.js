@@ -52,13 +52,13 @@ function Donation() {
   }
 }
   return (
-    <div className="flex justify-center">
-      <form method="POST" className="p-6 border-2 border-black rounded-xl bg-blue-300 mt-7">
+    <div className="flex justify-center ">
+      <form method="POST" className="p-4 border-2 border-black rounded-xl bg-blue-500 mt-7 md:w-96" >
         <div className="grid gap-6 mb-6 md:grid-cols-2 ">
           <div>
             <label
               htmlfor="first_name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white "
             >
               First name
             </label>
@@ -66,7 +66,7 @@ function Donation() {
               type="text"
            
               name="firstName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-100 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="John"
               required value={userData.firstName} onChange={postUserData}
             />
@@ -74,7 +74,7 @@ function Donation() {
           <div>
             <label
               htmlfor="last_name"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Last name
             </label>
@@ -82,7 +82,7 @@ function Donation() {
               type="text"
               
               name="lastName"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="Doe"
               value={userData.lastName} onChange={postUserData}
               required
@@ -93,7 +93,7 @@ function Donation() {
           <div>
             <label
               htmlfor="phone"
-              className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+              className="block mb-2 text-sm font-medium text-white dark:text-white"
             >
               Phone number
             </label>
@@ -101,7 +101,7 @@ function Donation() {
               type="tel"
               
               name = "phone"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               placeholder="123-45-678"
               value={userData.phone} onChange={postUserData}
               pattern="[0-9]{10}"
@@ -112,14 +112,14 @@ function Donation() {
         <div className="mb-6">
           <label
             htmlfor="email"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className="block mb-2 text-sm font-medium text-white dark:text-white"
           >
             Email address
           </label>
           <input
             type="email"
             name = "email"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             value={userData.email} onChange={postUserData}
             placeholder="john.doe@company.com"
             required
@@ -127,28 +127,28 @@ function Donation() {
         </div>
         <label
           htmlFor="countries"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="block mb-2 text-sm font-medium text-white dark:text-white"
         >
          Type
         </label>
         <select  
           name = "Type"
           
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={userData.Type} onChange={postUserData}
+          className="bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={userData.Type} onChange={postUserData}
         >
           <option value>Select</option>
           <option value="Donate">Donate</option>
         </select>
         <label
           htmlFor="Type"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="mb-2 text-sm font-medium text-white dark:text-white"
         >
         Item  
         </label>
         <select
           name="Item"
           value={userData.Item} onChange={postUserData}
-          className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="bg-gray-50 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
         >
           <option value>Select</option>
           <option value="clothes">Clothes</option>
@@ -157,7 +157,7 @@ function Donation() {
         <div>
           <label
             htmlfor="small-input"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+            className=" mt-2 text-sm font-medium text-white dark:text-white"
           >
             Address
           </label>
@@ -165,13 +165,13 @@ function Donation() {
             type="text"
             
             name = "address"
-            className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="w-96 rounded-xl p-2 text-gray-900 border border-gray-300  bg-gray-100 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
             value={userData.address} onChange={postUserData} placeholder="Your Address"
           />
         </div>
         <label
           htmlfor="message"
-          className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          className="block mb-2 text-sm font-medium text-white dark:text-white"
         >
           Your message
         </label>
@@ -179,7 +179,7 @@ function Donation() {
         
           name = "message"
           rows="4"
-          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-2"
+          className="block p-2.5 w-full text-sm text-gray-900 bg-gray-100 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 mb-2"
           placeholder="Write your thoughts here..."
           value={userData.message} onChange={postUserData}
         ></textarea>
