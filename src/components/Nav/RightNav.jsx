@@ -117,7 +117,7 @@ const RightNav = ({ open }) => {
               <div className="mt-2 flex justify-between">
                 {/* <p>{user?.displayName}</p> */}
                 
-                <img className=''  src={user?.photoURL || ''} alt="S" style = {{height:'40px' , width:'42px'}}  />
+                <img className=''  src={user?.photoURL || ''} alt="A" style = {{height:'40px' , width:'42px'}}  />
                 
                 <div>
                   <button className="btn btn-primary ml-2" onClick={signUserOut}>

@@ -19,7 +19,7 @@ function Receive() {
   };
   const submitData = async (event)=>{
     event.preventDefault();
-    const { firstName, lastName, phone, email, Type, Item, address, message }= userData;
+    const { firstName, lastName, phone, email, Type, Item, address, message } = userData;
     if( firstName&& lastName&& phone&& email&& Type&& Item && address&& message){
     const res = await fetch('https://solution-f5982-default-rtdb.asia-southeast1.firebasedatabase.app/donationData.json',
    {
@@ -157,6 +157,9 @@ function Receive() {
           <option value>Select</option>
           <option value="clothes">Clothes</option>
           <option value="food">Food</option>
+          <option value="toys">Toys</option>
+          <option value="Household things">Household things</option>
+          <option value="Old Books">Old Books</option>
         </select>
         </div>
         <div className="mb-6">

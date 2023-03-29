@@ -158,6 +158,9 @@ function Donation() {
           <option value>Select</option>
           <option value="clothes">Clothes</option>
           <option value="food">Food</option>
+          <option value="toys">Toys</option>
+          <option value="Household things">Household things</option>
+          <option value="Old Books">Old Books</option>
         </select>
         </div>
         
