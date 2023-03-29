@@ -172,7 +172,7 @@ function Donation() {
             type="text"
             
             name = "address"
-            className="w-96 rounded-xl p-2 text-gray-900 border border-gray-300  bg-gray-100 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+            className="w-[100%] rounded-xl p-2 text-gray-900 border border-gray-300  bg-gray-100 sm:text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 "
             value={userData.address} onChange={postUserData} placeholder="Your Address"
           />
         </div>
