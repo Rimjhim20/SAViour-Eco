@@ -1,4 +1,6 @@
 import { Routes, Route } from "react-router-dom"
+import { messaging } from "./firebase";
+import { getToken } from "firebase/messaging";
 import ProtectedRoute from "./components/Authentication/ProtectedRoute";
 import { UserAuthContextProvider } from "./contexts/UserAuthContext";
 import  { useEffect } from 'react';
@@ -29,7 +31,22 @@ import Tweet from "./Disasterpedia/Tweet";
 import Api from "./Api";
 import ImageClassification from "./services/ImageClassification"
 function App() {
+  async function requestPermission() {
+    const permission = await Notification.requestPermission();
+    if (permission === "granted") {
+      // Generate Token
+      const token = await getToken(messaging, {
+        vapidKey:
+          "BGoaw3DUyen07fJyKgs8lR2w_jvb1wuFSFr52aSti9cUmcrlxv0wVpvEy2EqGqQyV7q5JGM7w5Kzc6hGS7hl4Xg",
+      });
+      console.log("Token Gen", token);
+    } else if (permission === "denied") {
+      alert("You denied for the notification");
+    }
+  }
+
   useEffect(() => {
+    requestPermission();
     $('#myButton').floatingWhatsApp({
       phone: '9142532175',
       popupMessage: 'Hello, how can we help you?',

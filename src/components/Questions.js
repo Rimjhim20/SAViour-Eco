@@ -23,7 +23,7 @@ const questions = [
             { answerText: 'A. Open windows to equalize pressure', isCorrect: false },
             { answerText: 'B. Stay in a car', isCorrect: false },
             { answerText: 'C. Seek shelter in a low-lying area', isCorrect: false },
-            { answerText: 'D. Seek shelter in a small interior room on the lowest level of a building', isCorrect: true },
+            { answerText: 'D. Seek shelter on the lowest level of a building', isCorrect: true },
         ],
     },
     {
@@ -71,7 +71,7 @@ const questions = [
         answerOptions: [
             { answerText: 'A. Watch television news broadcasts', isCorrect: false },
             { answerText: 'B. Listen to the radio', isCorrect: false },
-            { answerText: 'C. Follow updates from local emergency management agencies on social media or their website', isCorrect: false },
+            { answerText: 'C. Follow emergencypages on social media', isCorrect: false },
             { answerText: 'D. All of the above', isCorrect: true },
             
         ],
@@ -90,7 +90,7 @@ const questions = [
         questionText: 'What should you include in your disaster evacuation plan?',
         answerOptions: [
             { answerText: 'A. A designated meeting place for your family', isCorrect: false },
-            { answerText: 'B. A plan for how you will evacuate, such as driving or taking public transportation', isCorrect: false },
+            { answerText: 'B. Plan to evacuate(driving/public transportation)', isCorrect: false },
             { answerText: 'C. Information about local emergency shelters', isCorrect: false },
             { answerText: 'D. All of the above', isCorrect: true },
             
